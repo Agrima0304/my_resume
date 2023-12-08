@@ -1,0 +1,245 @@
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+  {#1 \vspace{-2pt}}
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingb}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \vspace{-3pt}
+      \textbf{#1} & #2 \\
+         \textit{\scriptsize(#3)} & \textit{\scriptsize #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubheadingPro}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\textit {\small{#2}}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubheadingPOR}[2]{
+ \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{   #1} & #2 
+    \end{tabular*}
+  \vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING-----------------
+\begin{center}
+    \textbf{\Huge \scshape Agrima Bansal} \\ \vspace{1pt}
+    \faIcon{envelope} \href{mailto:20cs3005@rgipt.ac.in}{\underline{20cs3005@r}\underline{m}\underline{gipt.ac.in}} $|$ 
+ \faIcon{phone-square-alt} \small  \href{tel:+917020332372}{\underline{+91-7020332372}} $|$ 
+   \faIcon {linkedin} \href{https://www.linkedin.com/in/agrima-bansal-4694b9209/}{\underline{LinkedIN}} $|$
+  % \faIcon{link} \href{https://github.com/Agrima0304/}{{ayushr1.com}} $|$
+  \faIcon{github}  \href{https://github.com/Agrima0304/}{\underline{GitHub}}
+\end{center}
+%-----------EDUCATION-----------------
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingb
+      {\href{https://rgipt.ac.in//}{{{{Rajiv Gandhi Institute of Petroleum Technology}}}} }{Jais, UP}
+     {\href{https://rgipt.ac.in//}{{{An \textbf{Institute of National Importance} along the lines of \textbf{IITs}}}} }{} 
+     {Bachelor of Technology in Computer Science and Engineering; CPI: 8.5*}{Dec 2020 - Jun 2024}
+    \resumeSubheading
+      {City International School}{Pune, MH}
+      {Intermediate: 94\% CBSE board }{Jun 2019 - May 2020}
+    \resumeSubheading
+      {City Montessori School}{Lucknow, UP}
+      {Intermediate: 97\% ICSE board }{April 2017 - May 2018}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {SkillValley}{Remote}
+    {FullStack Developer (React,NodeJs,Express,MongoDb)}{May 2023 - August 2023}
+    \resumeItemListStart
+      \resumeItem{Implemented authorization}{On SkillValley Portal implemented Google Auth  and login through github,linkedin using \underline{useAuth0} React Hook.}
+      \resumeItem{Payment Gateway Integration}{Added RazorPay on the website to perform transactions.Created \underline{OrderAPI} to generate order id.}
+      \resumeItem{Nodemailer}{ Send bulk mail to multiple recipients in a \underline{JSON} body format using ethereal  }
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+   
+   \resumeSubheadingPro
+    {\href{https://github.com/Agrima0304/food_delivery}{{\textbf{FoodMania }}}      $|$ \emph{Web Application - ReactJS,Express, NodeJS, MongoDB} | 
+ \href{https://github.com/Agrima0304/food_delivery}{\underline{\textbf{GitHub}}}}{}
+    \resumeItemListStart
+        \resumeItemWithoutTitle
+          {Developed an online food delivery platform for adding food items to the cart and calculating the total price . }
+          \resumeItemWithoutTitle
+          {Made use of \textbf{Map} and \textbf{Filter} to food list items under food category}
+        \resumeItemWithoutTitle
+          {Made the use of \textbf{UseState}and \textbf{props} to change the state of items when selected.}
+          \resumeItemWithoutTitle
+          {Implemented \textbf{MongoDBAtlas} to manage the get or post the data from the database inorder to track all previous order and current orders of the user.
+          }
+      \resumeItemListEnd
+    \resumeSubheadingPro
+    { \href{https://github.com/Agrima0304/dbms}{{\textbf{RGIPT Alumni Portal}}} $|$ \emph{Interactive Web Application - HTML,CSS,JS,Express, NodeJS, MongoDB} |  \href{https://github.com/Agrima0304/dbms}{\underline{\textbf{GitHub}}}}{}
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+          {This portal is to act as a link between current students and passed out \textbf{alums} of the college}
+                   \resumeItemWithoutTitle
+         {Included a Signup and login page build using \textbf{HTML}, \textbf{CSS}, and \textbf{Javascript}}
+                   \resumeItemWithoutTitle
+         {Stored the academic data of the alums like their branch
+and filter the branch using\textbf{MongoDb} query.}
+\resumeItemWithoutTitle
+{Alumni donation form which consists of the usage of api to access amount donated.
+}
+         
+      \resumeItemListEnd
+ \resumeSubheadingPro
+       { \href{https://github.com/Agrima0304/ComedyCafe}{{\textbf{Comedy Cafe }}} $|$ \emph{API-based project-NodeJs,HTML,CSS,JS} |  \href{https://github.com/Agrima0304/ComedyCafe}{\underline{\textbf{GitHub}}}}{}
+    \resumeItemListStart
+          \resumeItemWithoutTitle
+          {Used a JOKE API that gives  a new joke every time when pressed on }
+                   \resumeItemWithoutTitle
+         {Have integrated it with a google chrome extension by which you can click every time and get a new joke.}
+                   \resumeItemWithoutTitle
+                   {Interested in the text part in the response,so extracted it using Javascript and replaced with  HTML and showed it on the extension.}
+         
+      
+\resumeSubHeadingListEnd
+
+     
+      
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{C++, C, Python, HTML, CSS, JavaScript}
+\resumeSubItem{Database}{MongoDB,SQL}        	
+    \resumeSubItem{Js Library}{ReactJs,NodeJs,Express}
+        	\resumeSubItem{Courses}{Databases, Operating Systems, Networking, Computer Architecture, Web Technology,Data Mining,Data Structures and Algorithms}
+\resumeSubHeadingListEnd
+
+
+
+%-----------Awards-----------------
+\section{Achievements}
+\resumeSubHeadingListStart
+
+\resumeItemWithoutTitle
+{Solved {\underline{500+ Problems}}  on 
+\href{https://leetcode.com/agrima0304/}{\underline{LeetCode}}, 
+\href{https://auth.geeksforgeeks.org/user/agrima0304}{\underline{GeeksforGeeks}}, \href{https://www.codechef.com/users/agrima_002}{\underline{CodeChef}}, and \href{https://codeforces.com/profile/agrima0304} {\underline{CodeForces.}}}
+\resumeItemWithoutTitle
+{Contributed to Open Source in GirlScript Winter Of Contributing(GWOC)'21}
+\resumeItemWithoutTitle
+{{\underline{Postman} Student Expert}}
+\resumeItemWithoutTitle
+{Scored 100/100 in Computers ICSE board }
+\resumeItemWithoutTitle
+{Qualified for the \textbf{IIT-JEE Advanced} 2020, ranking in the top \textbf{1.84}\%.}
+\resumeItemWithoutTitle
+{Completed Web Development BootCamp Course by Colt Steele on Udemy}
+\resumeSubHeadingListEnd
+%-----------PORS-----------------
+\section{Positions of Responsibility}
+
+
+
+  
+      
+  \resumeSubheadingPro
+    { \href{https://www.rgipt.ac.in/en/page/home-cse}{{\textbf{Science \& Technical Council}}} $|$ \emph{Core Team Member- Kode Club} }{}
+       
+
+     \resumeSubheadingPro
+    { \href{https://www.linkedin.com/company/gyanarpan-project-amethi/}{{\textbf{Gyanarpan  }}} $|$ \emph{Girls Coordinator} }{}
+        
+  
+      \resumeSubheadingPro
+          {\href{https://www.linkedin.com/company/codechef-rgipt-student-chapter/?viewAsMember=true}{{\textbf{CodeChef RGIPT Student Chapter}}} $|$ \emph{{Outreach and Media Lead}} }{}
+    
+       
+
+%-------------------------------------------
+\end{document}
+
